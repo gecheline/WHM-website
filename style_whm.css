@@ -1,0 +1,144 @@
+.header {
+    grid-area: header;
+    text-align: center;
+    border-bottom: 5px solid palevioletred;
+    color: palevioletred;
+    font-family: Impact;
+    font-size: 6vh;
+    height: 100%;
+    /* font-weight: bold; */
+}
+
+.name {
+    grid-area: name;
+    text-align: center;
+    height: 25vh;
+}
+.picture {
+    grid-area: picture;
+    padding: 1%;
+    align-content: center;
+    height: 100vh
+}
+.bio {
+    grid-area: bio;
+    align-content: center;
+    height: 40vh;
+    align-self: end;
+    padding-bottom: 5vh;
+
+}
+.footer {
+    grid-area: footer;
+    text-align: right;
+    border-top: 2px dotted palevioletred;
+    border-bottom: 2px dotted palevioletred;
+    font-family: fantasy;
+    opacity: 0.8;
+    color: palevioletred;
+    font-family: fantasy;
+    font-style: italic;
+}
+
+.grid-container {
+    width: inherit;
+    height: inherit;
+    margin: 1%;
+    display: grid;
+    /* grid-template-columns: 25% 25% auto;
+    grid-template-rows: 7.5% 55% 30%; */
+     grid-template-columns: auto auto auto;
+    grid-template-rows: 7.5% 50% 40%;   
+    grid-template-areas: 
+        ". header header"
+        "picture picture name"
+        "picture picture bio"
+        /* "picture picture . footer"; */
+}
+
+body {
+    font-family: "Helvetica Neue", sans-serif;
+    font-size: 10vh;
+    background-color: whitesmoke;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    background-image: url("photos/villanova_logo_aps1.png");
+    background-size: 20%;                      
+    background-repeat:   no-repeat;
+    background-position: 1% 1%;
+}
+
+html {
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+}
+
+h1 {
+    font-size: 12vh;
+    align-content: center;
+    /* height: 100%; */
+}
+
+
+h3 {
+    /* padding-left: 5%;
+    padding-top: 0%;
+    padding-bottom: 0%; */
+    font-size: 8vh;
+    color:#91576b;
+    align-content: center;
+    /* height: 100%; */
+}
+
+/* 
+div {
+    margin: 0.25cm;
+    } */
+
+p { 
+    font-family: "Helvetica Neue", sans-serif;
+    /* Helvetica, Arial, sans-serif; */
+    /* font-size: 120%; */
+    line-height: 1.5;
+    /* margin: 0.5cm; */
+    text-align: justify;
+    padding: 3%;
+    background-color:rgba(245,245,245,0.8);
+    /* height: 5vh; */
+    font-size: 3vh;
+}
+
+img#villanovalogo {
+    width: auto;
+    max-height: 80%;
+    opacity: 0.75;
+    }
+
+img {
+        /* width: 100%; 
+        height: auto; */
+        height: 90vh;
+        width: auto;
+    }
+
+/* Slideshow container */
+.slideshow-container {
+    position: relative;
+    margin: 0;
+    width: inherit;
+    height: inherit;
+  }
+  
+  
+  /* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 0.1s;
+    animation-name: fade;
+    animation-duration: 0.1s;
+  }
+
+.mySlides {display: none;}
+
